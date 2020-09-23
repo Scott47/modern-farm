@@ -26,9 +26,22 @@ console.log(sunflowerSeed)
 const wheatSeed = createWheat()
 console.log(wheatSeed)
 
+addPlant(asparagusSeed)
 addPlant(cornSeed)
+addPlant(potatoSeed)
+addPlant(sunflowerSeed)
+addPlant(wheatSeed)
 const plantPlants = usePlants()
 console.log(plantPlants)
 
-const tractorPlants = plantSeeds(yearlyPlan)
-console.log(tractorPlants)
+
+plantSeeds(yearlyPlan)
+const planToPlantSeeds = usePlants()
+console.log(planToPlantSeeds)
+
+
+
+
+
+
+
