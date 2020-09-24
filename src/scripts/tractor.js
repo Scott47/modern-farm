@@ -1,4 +1,3 @@
-import { createPlan } from "./plan.js"
 import { createAsparagus } from "./seeds/asparagus.js"
 import { createCorn } from "./seeds/corn.js"
 import { createPotato } from "./seeds/potato.js"
@@ -7,11 +6,12 @@ import { createWheat } from "./seeds/wheat.js"
 import { addPlant } from "./field.js"
 
 
-
+// function that iterates over parent and child plan arrays, invokes factory function to
+// create foods to be planted and adds them to the plant array in field.js
 export const plantSeeds = (thisYearsPlan) => {
 
     for (const plan of thisYearsPlan) {
-        plan.forEach(item => {
+        plan.map(item => {
             if (item === "Aspargus") {
                 let seedAsparagus = createAsparagus()
                 addPlant(seedAsparagus)

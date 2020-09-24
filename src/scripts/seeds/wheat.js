@@ -1,4 +1,6 @@
 
+// function for creating a seed that returns an object for wheat seeds
+
 export const createWheat = () => {
     const wheat = {
         type: "Wheat",

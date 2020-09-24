@@ -6,11 +6,13 @@ import { createSunflower } from "./seeds/sunflower.js"
 import { createWheat } from "./seeds/wheat.js"
 import { addPlant, usePlants } from "./field.js"
 import { plantSeeds } from './tractor.js'
+import { harvestPlants } from './harvester.js'
 
 
 const yearlyPlan = createPlan()
 console.log(yearlyPlan)
 
+// invoke functions to test seed creation
 const asparagusSeed = createAsparagus()
 console.log(asparagusSeed)
 
@@ -26,13 +28,16 @@ console.log(sunflowerSeed)
 const wheatSeed = createWheat()
 console.log(wheatSeed)
 
+
+// Invoke addPlant() and specify the seed object as the parameter.
 addPlant(asparagusSeed)
 addPlant(cornSeed)
 addPlant(potatoSeed)
 addPlant(sunflowerSeed)
 addPlant(wheatSeed)
+// Invoke usePlants() and store its return value in a variable.
 const plantPlants = usePlants()
-console.log(plantPlants)
+// console.log(plantPlants)
 
 
 plantSeeds(yearlyPlan)
@@ -41,6 +46,8 @@ console.log(planToPlantSeeds)
 
 
 
+const harvest = harvestPlants(planToPlantSeeds)
+console.log(harvest)
 
 
 
