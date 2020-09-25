@@ -1,5 +1,5 @@
 
-// function for creating a seed that returns an object for asparagus seeds
+// function for creating a seed that returns an object for soybean seeds
 export const createSoybean = () => {
     const soybean = {
         type: "Soybean",
