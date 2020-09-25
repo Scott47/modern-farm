@@ -10,7 +10,7 @@ import { plantSeeds } from './tractor.js'
 import { harvestPlants } from './harvester.js'
 import { catalog } from './catalog.js'
 
-
+// Store value for what createPlan returns when invoked in a variable named yearlyPlan.
 const yearlyPlan = createPlan()
 console.log(yearlyPlan)
 
@@ -44,12 +44,14 @@ console.log(wheatSeed)
 // console.log(plantPlants)
 
 
+// invoke the function that plants all of the seeds, and then get the plants array from the fields.js module
 plantSeeds(yearlyPlan)
 const planToPlantSeeds = usePlants()
 console.log(planToPlantSeeds)
 
 
-
+// Harvest the array of plants by invoking the appropriate harvestPlants function.
+// Make sure you specify the array of plants as an argument to the harvesting function.
 const harvest = harvestPlants(planToPlantSeeds)
 console.log(harvest)
 

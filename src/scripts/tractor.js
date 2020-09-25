@@ -13,29 +13,29 @@ export const plantSeeds = (thisYearsPlan) => {
     for (const plan of thisYearsPlan) {
         plan.forEach(item => {
             if (item === "Asparagus") {
-                let seedAsparagus = createAsparagus()
+                const seedAsparagus = createAsparagus()
                 addPlant(seedAsparagus)
             }
             else if (item === "Corn") {
-                let seedCorn = createCorn()
+                const seedCorn = createCorn()
                 seedCorn.forEach(cornObj => {
                     addPlant(cornObj)
                 })
             }
             else if (item === "Potato") {
-                let seedPotato = createPotato()
+                const seedPotato = createPotato()
                 addPlant(seedPotato)
             }
             else if (item === "Soybean") {
-                let seedSoybean = createSoybean()
+                const seedSoybean = createSoybean()
                 addPlant(seedSoybean)
             }
             else if (item === "Sunflower") {
-                let seedSunflower = createSunflower()
+                const seedSunflower = createSunflower()
                 addPlant(seedSunflower)
             }
             else if (item === "Wheat") {
-                let seedWheat = createWheat()
+                const seedWheat = createWheat()
                 addPlant(seedWheat)
             }
         })
