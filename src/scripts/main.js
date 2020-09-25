@@ -2,6 +2,7 @@ import { createPlan } from "./plan.js";
 import { createAsparagus } from "./seeds/asparagus.js"
 import { createCorn } from "./seeds/corn.js"
 import { createPotato } from "./seeds/potato.js"
+import { createSoybean } from "./seeds/soybean.js";
 import { createSunflower } from "./seeds/sunflower.js"
 import { createWheat } from "./seeds/wheat.js"
 import { addPlant, usePlants } from "./field.js"
@@ -23,6 +24,8 @@ console.log(cornSeed)
 const potatoSeed = createPotato()
 console.log(potatoSeed)
 
+const soybeanSeed = createSoybean()
+
 const sunflowerSeed = createSunflower()
 console.log(sunflowerSeed)
 
@@ -31,13 +34,13 @@ console.log(wheatSeed)
 
 
 // Invoke addPlant() and specify the seed object as the parameter.
-addPlant(asparagusSeed)
-addPlant(cornSeed)
-addPlant(potatoSeed)
-addPlant(sunflowerSeed)
-addPlant(wheatSeed)
+// addPlant(asparagusSeed)
+// addPlant(cornSeed)
+// addPlant(potatoSeed)
+// addPlant(sunflowerSeed)
+// addPlant(wheatSeed)
 // Invoke usePlants() and store its return value in a variable.
-const plantPlants = usePlants()
+// const plantPlants = usePlants()
 // console.log(plantPlants)
 
 
@@ -51,7 +54,7 @@ const harvest = harvestPlants(planToPlantSeeds)
 console.log(harvest)
 
 const sale = catalog(harvest)
-console.log(sale)
+// console.log(sale)
 
 
 
