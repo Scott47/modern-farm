@@ -4,7 +4,7 @@ import { createPotato } from "./seeds/potato.js"
 import { createSunflower } from "./seeds/sunflower.js"
 import { createSoybean } from "./seeds/soybean.js"
 import { createWheat } from "./seeds/wheat.js"
-import { usePlants, addPlant } from "./field.js"
+import { addPlant } from "./field.js"
 
 // function that iterates over parent and child plan arrays, invokes factory function to
 // create foods to be planted and adds them to the plant array in field.js
