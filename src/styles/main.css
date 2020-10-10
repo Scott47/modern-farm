@@ -33,4 +33,15 @@ h1,h2,h3,h4,h5,h6 {
 .red {
     background-color: darksalmon;
 }
+.container {
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background-color: rgb(226, 243, 118);
 
+}
+.plant {
+    font-size: x-large;
+    margin: 2.25%;
+}

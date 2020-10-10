@@ -9,7 +9,7 @@
 export const catalog = (harvestedFood) => {
     const contentElement = document.querySelector(".container")
     for (const food of harvestedFood) {
-        contentElement.innerHTML += `<section class="plant">${food.type}</section>`
+        contentElement.innerHTML += `<section class="plant">\n${food.type}\n</section>`
     }
     // return contentElement
 }
